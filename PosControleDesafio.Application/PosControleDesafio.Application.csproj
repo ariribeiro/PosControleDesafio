@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PosControleDesafio.Application.DTO\PosControleDesafio.Application.DTO.csproj" />
+    <ProjectReference Include="..\PosControleDesafio.Domain.Core\PosControleDesafio.Domain.Core.csproj" />
+    <ProjectReference Include="..\PosControleDesafio.Infra.CrossCutting.Adapter\PosControleDesafio.Infra.CrossCutting.Adapter.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PosControleDesafio.Application\PosControleDesafio.Application.csproj" />
+    <ProjectReference Include="..\PosControleDesafio.Domain.Service\PosControleDesafio.Domain.Service.csproj" />
+    <ProjectReference Include="..\PosControleDesafio.Infra.CrossCutting.Adapter\PosControleDesafio.Infra.CrossCutting.Adapter.csproj" />
+    <ProjectReference Include="..\PosControleDesafio.Infra.Repository\PosControleDesafio.Infra.Repository.csproj" />
+  </ItemGroup>
+
+</Project>
