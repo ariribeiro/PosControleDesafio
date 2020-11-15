@@ -10,5 +10,6 @@ namespace PosControleDesafio.Application.DTO.DTO
         public string nome { get; set; }
         public string descricao { get; set; }
         public decimal valor { get; set; }
+        public int categoriaId { get; set; }
     }
 }

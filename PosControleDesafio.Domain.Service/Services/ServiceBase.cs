@@ -25,6 +25,10 @@ namespace PosControleDesafio.Domain.Service.Services
         {
             return _repository.GetAll();
         }
+        public virtual IEnumerable<TEntity> GetByFilter(Func<TEntity, bool> predicate)
+        {
+            return _repository.GetByFilter(predicate);
+        }
         public virtual void Update(TEntity obj)
         {
             _repository.Update(obj);
@@ -37,6 +41,11 @@ namespace PosControleDesafio.Domain.Service.Services
         public virtual void Dispose()
         {
             _repository.Dispose();
+        }
+
+        public virtual TEntity FindByFilter(Func<TEntity, bool> predicate)
+        {
+            return this._repository.FindByFilter(predicate);
         }
     }
 }

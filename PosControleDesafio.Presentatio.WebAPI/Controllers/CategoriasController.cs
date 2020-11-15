@@ -6,26 +6,25 @@ using System.Collections.Generic;
 using Swashbuckle.AspNetCore.Annotations;
 using Microsoft.AspNetCore.Authorization;
 
-namespace PosControleDesafio.Presentatio.WebAPI.Controllers
+namespace PosControleDesafio.Presentation.WebAPI.Controllers
 {
     [Route("api/v1/[controller]")]
     [ApiController]
     [Authorize]
-    public class ProdutosController : ControllerBase
+    public class CategoriasController : ControllerBase
     {
-        private readonly IApplicationServiceProduto _applicationServiceProduto;
+        private readonly IApplicationServiceCategoria _applicationServiceCategoria;
 
-        public ProdutosController(IApplicationServiceProduto ApplicationServiceProduto)
+        public CategoriasController(IApplicationServiceCategoria ApplicationServiceCategoria)
         {
-            _applicationServiceProduto = ApplicationServiceProduto;
+            _applicationServiceCategoria = ApplicationServiceCategoria;
         }
-
         // GET api/values
         [HttpGet]
-        [SwaggerOperation(Summary = "Retona lista de produtos")]
+        [SwaggerOperation(Summary = "Retorna lista de Categorias")]
         public ActionResult<IEnumerable<string>> Get()
         {
-            return Ok(_applicationServiceProduto.GetAll());
+            return Ok(_applicationServiceCategoria.GetAll());
         }
 
         // GET api/values/5\
@@ -33,22 +32,22 @@ namespace PosControleDesafio.Presentatio.WebAPI.Controllers
         [SwaggerOperation(Summary = "Retorna produto por ID")]
         public ActionResult<string> Get(int id)
         {
-            return Ok(_applicationServiceProduto.GetById(id));
+            return Ok(_applicationServiceCategoria.GetById(id));
         }
 
         // POST api/values
         [HttpPost]
         [SwaggerOperation(Summary = "Insere produto")]
-        public ActionResult Post([FromBody] ProdutoDTO produtoDTO)
+        public ActionResult Post([FromBody] CategoriaDTO categoriaDTO)
         {
             try
             {
-                if (produtoDTO == null)
+                if (categoriaDTO == null)
                     return NotFound();
 
 
-                _applicationServiceProduto.Add(produtoDTO);
-                return Ok("O produto foi cadastrado com sucesso");
+                _applicationServiceCategoria.Add(categoriaDTO);
+                return Ok("Categoria foi cadastrada com sucesso");
             }
             catch (Exception ex)
             {
@@ -59,17 +58,17 @@ namespace PosControleDesafio.Presentatio.WebAPI.Controllers
 
         // PUT api/values/5
         [HttpPut]
-        [SwaggerOperation(Summary = "Atualiza produtos")]
-        public ActionResult Put([FromBody] ProdutoDTO produtoDTO)
+        [SwaggerOperation(Summary = "Atualiza categoria")]
+        public ActionResult Put([FromBody] CategoriaDTO categoriaDTO)
         {
 
             try
             {
-                if (produtoDTO == null)
+                if (categoriaDTO == null)
                     return NotFound();
 
-                _applicationServiceProduto.Update(produtoDTO);
-                return Ok("O produto foi atualizado com sucesso!");
+                _applicationServiceCategoria.Update(categoriaDTO);
+                return Ok("Categoria foi atualizada com sucesso!");
 
             }
             catch (Exception ex)
@@ -81,16 +80,16 @@ namespace PosControleDesafio.Presentatio.WebAPI.Controllers
 
         // DELETE api/values/5
         [HttpDelete()]
-        [SwaggerOperation(Summary = "Exclui produto")]
-        public ActionResult Delete([FromBody] ProdutoDTO produtoDTO)
+        [SwaggerOperation(Summary = "Exclui Categoria")]
+        public ActionResult Delete([FromBody] CategoriaDTO categoriaDTO)
         {
             try
             {
-                if (produtoDTO == null)
+                if (categoriaDTO == null)
                     return NotFound();
 
-                _applicationServiceProduto.Remove(produtoDTO);
-                return Ok("O produto foi removido com sucesso!");
+                _applicationServiceCategoria.Remove(categoriaDTO);
+                return Ok("Categoria foi removido com sucesso!");
 
             }
             catch (Exception ex)
@@ -100,5 +99,4 @@ namespace PosControleDesafio.Presentatio.WebAPI.Controllers
             }
         }
     }
-
 }

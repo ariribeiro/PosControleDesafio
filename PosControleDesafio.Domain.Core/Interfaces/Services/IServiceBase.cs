@@ -16,6 +16,10 @@ namespace PosControleDesafio.Domain.Core.Interfaces.Services
 
         IEnumerable<TEntity> GetAll();
 
+        IEnumerable<TEntity> GetByFilter(Func<TEntity, bool> predicate);
+
+        TEntity FindByFilter(Func<TEntity, bool> predicate);
+
         TEntity GetById(int id);
     }
 }

@@ -54,6 +54,9 @@ namespace PosControleDesafio.Infra.CrossCutting.Adapter.Map
 
         public CategoriaDTO MapperToDTO(Categoria categoria)
         {
+            if (categoria == null)
+                return null;
+
             CategoriaDTO categoriaDTO = new CategoriaDTO
             {
                 Id = categoria.Id,

@@ -5,6 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.10" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\PosControleDesafio.Application.DTO\PosControleDesafio.Application.DTO.csproj" />
     <ProjectReference Include="..\PosControleDesafio.Domain.Core\PosControleDesafio.Domain.Core.csproj" />
     <ProjectReference Include="..\PosControleDesafio.Infra.CrossCutting.Adapter\PosControleDesafio.Infra.CrossCutting.Adapter.csproj" />

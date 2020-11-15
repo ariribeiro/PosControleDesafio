@@ -19,21 +19,25 @@ namespace PosControleDesafio.Infra.CrossCutting.IOC
             #region IOC Application
             builder.RegisterType<ApplicationServiceCategoria>().As<IApplicationServiceCategoria>();
             builder.RegisterType<ApplicationServiceProduto>().As<IApplicationServiceProduto>();
+            builder.RegisterType<ApplicationServiceUsuario>().As<IApplicationServiceUsuario>();
             #endregion
 
             #region IOC Services
             builder.RegisterType<ServiceCategoria>().As<IServiceCategoria>();
             builder.RegisterType<ServiceProduto>().As<IServiceProduto>();
+            builder.RegisterType<ServiceUsuario>().As<IServiceUsuario>();
             #endregion
 
             #region IOC Repositorys SQL
             builder.RegisterType<RepositoryCategoria>().As<IRepositoryCategoria>();
             builder.RegisterType<RepositoryProduto>().As<IRepositoryProduto>();
+            builder.RegisterType<RepositoryUsuario>().As<IRepositoryUsuario>();
             #endregion
 
             #region IOC Mapper
             builder.RegisterType<MapperCategoria>().As<IMapperCategoria>();
             builder.RegisterType<MapperProduto>().As<IMapperProduto>();
+            builder.RegisterType<MapperUsuario>().As<IMapperUsuario>();
             #endregion
 
             #endregion

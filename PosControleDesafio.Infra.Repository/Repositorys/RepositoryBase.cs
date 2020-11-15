@@ -41,6 +41,12 @@ namespace PosControleDesafio.Infra.Repository.Repositorys
             return _context.Set<TEntity>().ToList();
         }
 
+        public virtual IEnumerable<TEntity> GetByFilter(Func<TEntity, bool> predicate)
+        {
+            return _context.Set<TEntity>().Where(predicate).ToList();
+        }
+
+
         public virtual void Update(TEntity obj)
         {
 
@@ -79,7 +85,10 @@ namespace PosControleDesafio.Infra.Repository.Repositorys
             _context.Dispose();
         }
 
-
+        public TEntity FindByFilter(Func<TEntity, bool> predicate)
+        {
+            return _context.Set<TEntity>().Where(predicate).FirstOrDefault();
+        }
     }
 
 }

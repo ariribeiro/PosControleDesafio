@@ -1,5 +1,5 @@
-﻿using PosControleDesafio.Domain.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using PosControleDesafio.Domain.Models;
 using System;
 using System.Linq;
 
@@ -15,6 +15,22 @@ namespace PosControleDesafio.Infra.Data
         public DbSet<Categoria> Categorias { get; set; }
 
         public DbSet<Produto> Produtos { get; set; }
+        
+        public DbSet<Usuario> Usuarios {  get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.HasSequence<int>("seq_Categoria")
+                .StartsAt(0)
+                .IncrementsBy(1);
+
+            modelBuilder.Entity<Categoria>()
+                .Property(o => o.Id)
+                .HasDefaultValueSql("NEXT VALUE FOR seq_Categoria");
+
+            
+        }
+
         public override int SaveChanges()
         {
             foreach (var entry in ChangeTracker.Entries().Where(entry => entry.Entity.GetType().GetProperty("DataCadastro") != null))
