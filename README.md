@@ -6,6 +6,7 @@ API modelada em DDD, para cadastro de produtos e serviços, com autenticação J
 
 ### Tecnologias empregadas:
 
+- C#
 - Asp.net Core
 - EF Core
 - SQL Server
