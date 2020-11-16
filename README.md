@@ -1,7 +1,11 @@
-# PosControleDesafio
-
 # POS Controle - Desafio
 
-API modelada em DDD, para cadastro de produtos e serviços, com autenticação Jwt
+API modelada em DDD, para cadastro de produtos e serviços, com autenticação Jwt.
 
-[DOcumentação](https://poscontrole-webapi.azurewebsites.net/swagger/index.html)
+[Documentação](https://poscontrole-webapi.azurewebsites.net/swagger/index.html)
+
+### Tecnologias empregadas:
+
+- Asp.net Core
+- EF Core
+- SQL Server
