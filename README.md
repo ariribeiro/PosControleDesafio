@@ -4,6 +4,11 @@ API modelada em DDD, para cadastro de produtos e serviços, com autenticação J
 
 [Documentação](https://poscontrole-webapi.azurewebsites.net/swagger/index.html)
 
+## Usuário para teste
+| Usuario    | Senha  |
+|------------|--------|
+| ariribeiro | 123456 |
+
 ### Tecnologias empregadas:
 
 - C#
