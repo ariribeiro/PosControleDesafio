@@ -35,7 +35,7 @@ namespace PosControleDesafio.Presentatio.WebAPI.Controllers
 
             return Ok(user);
         }
-
+        
         
         // POST api/values
         [HttpPost]

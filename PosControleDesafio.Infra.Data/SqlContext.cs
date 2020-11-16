@@ -18,18 +18,6 @@ namespace PosControleDesafio.Infra.Data
         
         public DbSet<Usuario> Usuarios {  get; set; }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.HasSequence<int>("seq_Categoria")
-                .StartsAt(0)
-                .IncrementsBy(1);
-
-            modelBuilder.Entity<Categoria>()
-                .Property(o => o.Id)
-                .HasDefaultValueSql("NEXT VALUE FOR seq_Categoria");
-
-            
-        }
 
         public override int SaveChanges()
         {

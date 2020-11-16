@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "apis1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ApiManagement/service/poscontrole-teste/apis/pos-controle-teste",
+      "type": "apis.azure",
+      "apiEndpoint": "https://poscontrole-teste.azure-api.net/"
+    },
+    "mssql1": {
+      "type": "mssql.onprem",
+      "connectionId": "DefaultConnection",
+      "secretStore": null
+    }
+  }
+}

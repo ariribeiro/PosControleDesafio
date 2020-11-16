@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <StartupObject>PosControleDesafio.Presentatio.WebAPI.Program</StartupObject>
+    <UserSecretsId>873be6dc-f18f-4af9-bbf0-886d24fb8b99</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>

@@ -48,14 +48,14 @@ namespace PosControleDesafio.Presentatio.WebAPI
             });
 
             // Abre conexão com o banco
-            var connection = Configuration["ConnectionStrings:DefaultConnection"];
+            var connection = Configuration["ConnectionStrings:AzureConecction"];
             services.AddDbContext<SqlContext>(options => options.UseSqlServer(connection));
             services.AddMemoryCache();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
 
             services.AddSwaggerGen(e => {
                 e.EnableAnnotations();
-                e.SwaggerDoc("v1", new OpenApiInfo { Title = "Protected API", Version = "v1", Description = "Descrição do projeto" });
+                e.SwaggerDoc("v1", new OpenApiInfo { Title = "Pós Controle - Teste", Version = "v1", Description = "API modelada em DDD, para cadastro de produtos e serviços, com autenticação Jwt" });
 
             });
 

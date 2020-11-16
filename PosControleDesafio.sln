@@ -11,29 +11,29 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{9E49C2
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{0C8225FB-0AC0-4331-BF11-497FC0664541}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PosControleDesafio.Domain", "PosControleDesafio.Domain\PosControleDesafio.Domain.csproj", "{6850F17F-273B-4380-A84A-2AE28D436982}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PosControleDesafio.Domain", "PosControleDesafio.Domain\PosControleDesafio.Domain.csproj", "{6850F17F-273B-4380-A84A-2AE28D436982}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PosControleDesafio.Domain.Core", "PosControleDesafio.Domain.Core\PosControleDesafio.Domain.Core.csproj", "{39CEF093-C2FD-4985-B7DD-30599CFAD15C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PosControleDesafio.Domain.Core", "PosControleDesafio.Domain.Core\PosControleDesafio.Domain.Core.csproj", "{39CEF093-C2FD-4985-B7DD-30599CFAD15C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PosControleDesafio.Domain.Service", "PosControleDesafio.Domain.Service\PosControleDesafio.Domain.Service.csproj", "{BB38860F-1406-42C2-83EF-6991DE7FB497}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PosControleDesafio.Domain.Service", "PosControleDesafio.Domain.Service\PosControleDesafio.Domain.Service.csproj", "{BB38860F-1406-42C2-83EF-6991DE7FB497}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PosControleDesafio.Application", "PosControleDesafio.Application\PosControleDesafio.Application.csproj", "{9444F8D4-DB90-4DB1-9160-D657070584FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PosControleDesafio.Application", "PosControleDesafio.Application\PosControleDesafio.Application.csproj", "{9444F8D4-DB90-4DB1-9160-D657070584FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PosControleDesafio.Application.DTO", "PosControleDesafio.Application.DTO\PosControleDesafio.Application.DTO.csproj", "{5E5E06E4-3460-4F7D-BDEF-89E5AB2D6181}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PosControleDesafio.Application.DTO", "PosControleDesafio.Application.DTO\PosControleDesafio.Application.DTO.csproj", "{5E5E06E4-3460-4F7D-BDEF-89E5AB2D6181}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{5BF403BB-A859-4B15-8111-73BC1E16F67D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PosControleDesafio.Infra.Data", "PosControleDesafio.Infra.Data\PosControleDesafio.Infra.Data.csproj", "{6CBAF222-5AE3-46F8-818D-BB95682DDFA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PosControleDesafio.Infra.Data", "PosControleDesafio.Infra.Data\PosControleDesafio.Infra.Data.csproj", "{6CBAF222-5AE3-46F8-818D-BB95682DDFA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PosControleDesafio.Infra.Repository", "PosControleDesafio.Infra.Repository\PosControleDesafio.Infra.Repository.csproj", "{E41C48E4-E939-4CBD-BFA7-FCE04FF1A7CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PosControleDesafio.Infra.Repository", "PosControleDesafio.Infra.Repository\PosControleDesafio.Infra.Repository.csproj", "{E41C48E4-E939-4CBD-BFA7-FCE04FF1A7CD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCutting", "CrossCutting", "{0DBB698F-2F81-49B0-A799-2FAB0924A5F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PosControleDesafio.Infra.CrossCutting.Adapter", "PosControleDesafio.Infra.CrossCutting.Adapter\PosControleDesafio.Infra.CrossCutting.Adapter.csproj", "{FA45A1DD-7219-4728-AAD5-176C7E9F5A86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PosControleDesafio.Infra.CrossCutting.Adapter", "PosControleDesafio.Infra.CrossCutting.Adapter\PosControleDesafio.Infra.CrossCutting.Adapter.csproj", "{FA45A1DD-7219-4728-AAD5-176C7E9F5A86}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PosControleDesafio.Infra.CrossCutting.IOC", "PosControleDesafio.Infra.CrossCutting.IOC\PosControleDesafio.Infra.CrossCutting.IOC.csproj", "{738A37C8-7209-4CCC-B06F-B422A0163327}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PosControleDesafio.Infra.CrossCutting.IOC", "PosControleDesafio.Infra.CrossCutting.IOC\PosControleDesafio.Infra.CrossCutting.IOC.csproj", "{738A37C8-7209-4CCC-B06F-B422A0163327}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PosControleDesafio.Presentation.WebAPI", "PosControleDesafio.Presentatio.WebAPI\PosControleDesafio.Presentation.WebAPI.csproj", "{7CA6B342-A8E2-49E8-B447-BC1574D77B86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PosControleDesafio.Presentation.WebAPI", "PosControleDesafio.Presentatio.WebAPI\PosControleDesafio.Presentation.WebAPI.csproj", "{7CA6B342-A8E2-49E8-B447-BC1574D77B86}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
